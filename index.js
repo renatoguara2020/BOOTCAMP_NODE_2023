@@ -12,4 +12,5 @@ app.get('/', (req, res) => {
   //console.log(`Example app listening in ${process.env.PORT}`)
 //});
 
-conn.sync().then(() => { app.listen(process.env.PORT)}).catch((err) => console.log(err))
+//conn.sync().then(() => { app.listen(process.env.PORT)}).catch((err) => console.log(err));
+conn.sync(() => console.log(`Banco de dados conectado: ${process.env.PORT}`));
