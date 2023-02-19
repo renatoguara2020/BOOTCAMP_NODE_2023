@@ -1,3 +1,4 @@
+const conn = require('./conn');
 const { Sequelize } = require('sequelize')
 
 const sequelize = new Sequelize('nodesequelize', 'root', '', {
